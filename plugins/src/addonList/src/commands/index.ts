@@ -20,7 +20,7 @@ const Clyde = findByProps('sendBotMessage');
 const maxMessageLength = findByStoreName('UserStore').getCurrentUser()?.premiumType === 2 ? 4000 : 2000;
 
 const isSLMPluginInstalled = (installedPlugins: typeof plugins) => Object.keys(installedPlugins).includes(SPLIT_LARGE_MESSAGES_PLUGIN);
-const isSLMPPluginEnabled = (installedPlugins: typeof plugins) => Object.values(installedPlugins).find((plugin) => plugin.id == SPLIT_LARGE_MESSAGES_PLUGIN).enabled;
+const isSLMPluginEnabled = (installedPlugins: typeof plugins) => Object.values(installedPlugins).find((plugin) => plugin.id == SPLIT_LARGE_MESSAGES_PLUGIN).enabled;
 
 const getArgumentValue = (args: any[]) => <boolean> args.find(arg => arg.name === ARGS.DETAILED)?.value ?? false;
 
@@ -64,8 +64,10 @@ export async function themeList(args: any[], ctx: CommandContext) {
         }
     } else themeList.push(NOTHING_TO_SEE);
 
-    if (getListLength(themeList) > maxMessageLength && !isSLMPluginInstalled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_INSTALLED);
-    else if (getListLength(themeList) > maxMessageLength && !isSLMPPluginEnabled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_ENABLED);
+    const isListTooLong = getListLength(themeList) > maxMessageLength;
+
+    if (isListTooLong && !isSLMPluginInstalled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_INSTALLED);
+    else if (isListTooLong && !isSLMPluginEnabled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_ENABLED);
     else {
         if (getListLength(themeList) > 2000) return alerts.showConfirmationAlert({
             content: ALERT.CONTENT,
@@ -106,8 +108,10 @@ export async function pluginList(args: any[], ctx: CommandContext) {
         );
     }
 
-    if (getListLength(pluginList) > maxMessageLength && !isSLMPluginInstalled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_INSTALLED);
-    else if (getListLength(pluginList) > maxMessageLength && !isSLMPPluginEnabled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_ENABLED);
+    const isListTooLong = getListLength(pluginList) > maxMessageLength;
+
+    if (isListTooLong && !isSLMPluginInstalled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_INSTALLED);
+    else if (isListTooLong && !isSLMPluginEnabled(plugins)) Clyde.sendBotMessage(channelID, FAILED_TO_SEND_LIST.SLM_NOT_ENABLED);
     else {
         if (getListLength(pluginList) > 2000) return alerts.showConfirmationAlert({
             content: ALERT.CONTENT,
