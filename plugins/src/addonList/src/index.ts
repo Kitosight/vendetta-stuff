@@ -1,11 +1,13 @@
-import onLoad from "./loaders/onLoad";
-import onUnload from "./loaders/onUnload";
+import { load } from "./loaders/onLoad";
+import { unload } from "./loaders/onUnload";
 import settings from "./settings";
 
-let registeredCommands: (() => void)[];
+export type RegisteredCommand = (() => void);
+
+let registeredCommands: RegisteredCommand[];
 
 export default {
-    onLoad: () => { registeredCommands = onLoad() },
-    onUnload: () => { onUnload(registeredCommands) },
+    onLoad: () => { registeredCommands = load() },
+    onUnload: () => { unload(registeredCommands) },
     settings
 };

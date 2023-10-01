@@ -1,5 +1,5 @@
-export default (registeredCommands: (() => void)[]) => {
-    for (const unregister of registeredCommands) {
-        unregister();
-    };
-};
+import { type RegisteredCommand } from "..";
+
+export function unload(registeredCommands: RegisteredCommand[]) {
+    for (const unregisterCommand of registeredCommands) unregisterCommand();
+}

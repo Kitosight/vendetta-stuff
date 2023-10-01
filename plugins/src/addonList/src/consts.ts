@@ -39,8 +39,8 @@ export const THEME_LIST_COMMAND = {
 export const SPLIT_LARGE_MESSAGES_PLUGIN = 'https://vd-plugins.github.io/proxy/actuallythesun.github.io/vendetta-plugins/SplitLargeMessages/';
 
 export const FAILED_TO_SEND_LIST = {
-    SLM_NOT_INSTALLED: `Your list is too long to send it! Please install the Split Large Messages plugin: ${SPLIT_LARGE_MESSAGES_PLUGIN}`,
-    SLM_NOT_ENABLED: 'Your list is too long to send it! You have the Split Large Messages plugin installed, but it is disabled! Please enabled it.'
+    SLM_NOT_INSTALLED: `Your list is too long to send it! Please install the [Split Large Messages](${SPLIT_LARGE_MESSAGES_PLUGIN}) plugin.`,
+    SLM_NOT_ENABLED: "Your list is too long to send it! You have the Split Large Messages plugin installed, but it's not enabled!\n> Please enable it in order to send the list."
 } as const;
 
 export const ALERT = {
