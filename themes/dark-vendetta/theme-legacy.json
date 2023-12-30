@@ -1,0 +1,82 @@
+{
+    "name": "Dark Vendetta (Legacy)",
+    "description": "A \"improved\" dark theme for Discord.\nOriginal theme by ignacio. Restored and maintained by Kitomanari.",
+    "authors": [
+        {
+            "name": "ignacio",
+            "id": "811581067940855888"
+        },
+        {
+            "name": "Kitomanari",
+            "id": "437154602626973697"
+        }
+    ],
+    "spec": 2,
+    "semanticColors": {
+        "HEADER_PRIMRARY": [
+            "#141414"
+        ],
+        "HEADER_SECONDARY": [
+            "#b6b6b6"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#c8c8c8"
+        ],
+        "INTERACTIVE_HOVER": [
+            "#dcddde"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#dcddde"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#6c757d"
+        ],
+        "BACKGROUND_PRIMRARY": [
+            "#141414"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#111111"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#0e0e0e"
+        ],
+        "BACKGROUND_TERTIARY": [
+            "#0c0c0c"
+        ],
+        "BACKGROUND_MOBILE_SECONDARY": [
+            "#111111"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#0c0c0c"
+        ],
+        "CHANNEL_ICON": [
+            "#b6b6b6"
+        ],
+        "CHANNEL_TEXT_AREA_PLACEHOLDER": [
+            "#6c757d"
+        ],
+        "CHAT_BACKGROUND":[
+            "#141414"
+        ],
+        "SPOILER_HIDDEN_BACKGROUND": [
+            "#0c0c0c"
+        ]
+    },
+    "rawColors": {
+        "BRAND_300": "#dcddde",
+        "BRAND_500": "#007bff",
+        "BRAND_560": "#6c757d",
+        "RED_400": "#dc3545",
+        "YELLOW_300": "#ffc107",
+        "PRIMARY_100": "#dcddde",
+        "PRIMARY_200": "#dcddde",
+        "PRIMARY_460": "#141414",
+        "PRIMARY_560": "#141414",
+        "PRIMARY_600": "#141414",
+        "PRIMARY_630": "#141414",
+        "PRIMARY_700": "#141414",
+        "PRIMARY_800": "#141414",
+        "BRAND_NEW_500_ALPHA_20": "#007bff33",
+        "PRIMARY_DARK_700_ALPHA_60": "#14141499"
+    }
+}
