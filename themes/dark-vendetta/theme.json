@@ -1,6 +1,6 @@
 {
     "name": "Dark Vendetta",
-    "description": "A \"improved\" dark theme for Discord. Original theme by ignacio. Restored and maintained by Kitomanari.",
+    "description": "A \"improved\" dark theme for Discord.\nOriginal theme by ignacio.\nRestored and maintained by Kitomanari.\nTested on 209.14 Discord version.\nLast updated: 30.12.2023.",
     "authors": [
         {
             "name": "ignacio",
@@ -13,70 +13,17 @@
     ],
     "spec": 2,
     "semanticColors": {
-        "HEADER_PRIMRARY": [
-            "#141414"
-        ],
-        "HEADER_SECONDARY": [
-            "#b6b6b6"
-        ],
-        "INTERACTIVE_NORMAL": [
-            "#c8c8c8"
-        ],
-        "INTERACTIVE_HOVER": [
-            "#dcddde"
-        ],
-        "INTERACTIVE_ACTIVE": [
-            "#dcddde"
-        ],
-        "INTERACTIVE_MUTED": [
-            "#6c757d"
-        ],
-        "BACKGROUND_PRIMRARY": [
-            "#141414"
-        ],
-        "BACKGROUND_SECONDARY": [
-            "#111111"
-        ],
-        "BACKGROUND_SECONDARY_ALT": [
-            "#0e0e0e"
-        ],
-        "BACKGROUND_TERTIARY": [
-            "#0c0c0c"
-        ],
-        "BACKGROUND_MOBILE_SECONDARY": [
-            "#111111"
-        ],
-        "BACKGROUND_MODIFIER_ACTIVE": [
-            "#0c0c0c"
-        ],
-        "CHANNEL_ICON": [
-            "#b6b6b6"
-        ],
-        "CHANNEL_TEXT_AREA_PLACEHOLDER": [
-            "#6c757d"
-        ],
-        "CHAT_BACKGROUND":[
-            "#141414"
-        ],
-        "SPOILER_HIDDEN_BACKGROUND": [
-            "#0c0c0c"
-        ]
+        "BACKGROUND_MENTIONED": ["#00000000"]
     },
     "rawColors": {
-        "BRAND_300": "#dcddde",
-        "BRAND_500": "#007bff",
-        "BRAND_560": "#6c757d",
-        "RED_400": "#dc3545",
-        "YELLOW_300": "#ffc107",
-        "PRIMARY_100": "#dcddde",
-        "PRIMARY_200": "#dcddde",
-        "PRIMARY_460": "#141414",
-        "PRIMARY_560": "#141414",
-        "PRIMARY_600": "#141414",
-        "PRIMARY_630": "#141414",
-        "PRIMARY_700": "#141414",
-        "PRIMARY_800": "#141414",
-        "BRAND_NEW_500_ALPHA_20": "#007bff33",
-        "PRIMARY_DARK_700_ALPHA_60": "#14141499"
+        "PLUM_15": "#181818",
+        "PLUM_16": "#181818",
+        "PLUM_17": "#141414",
+        "PLUM_18": "#141414",
+        "PLUM_19": "#181818",
+        "PLUM_20": "#121212",
+        "PLUM_22": "#121212",
+        "PLUM_23": "#181818",
+        "YELLOW_300": "#007bff"
     }
 }
