@@ -13,7 +13,8 @@
     ],
     "spec": 2,
     "semanticColors": {
-        "BACKGROUND_MENTIONED": ["#00000000"]
+        "BACKGROUND_MENTIONED": ["#00000000"],
+        "STATUS_IDLE": ["#f0b232"]
     },
     "rawColors": {
         "PLUM_13": "#181818",
